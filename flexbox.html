@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Flexbox</title>
+            <link rel="stylesheet" href="style.css">
+            <link rel="icon" href="image/favicon2.jpg" sizes="16x16" type="image/png">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <!-- Font Awesome -->
+            <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+            <!-- Google Fonts -->
+            <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+            <!-- MDB -->
+            <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.1.0/mdb.min.css" rel="stylesheet" />
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+                integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+            <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">
+            <!-- Font Awesome
+                        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+                        <!-- Google Fonts -->
+            <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" /> -->
+            <!-- MDB -->
+            <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.1.0/mdb.min.css" rel="stylesheet" /> -->
+            </head>
+            
+            <body>
+                <div class="container-fluid">
+                    <!-- <div class="logo-box">
+                        <a href="index.html"><img src="image/facebook_profile_image.png" alt="logo image" class="logo"></a>
+                    </div> -->
+                    <div class="head-title">
+                        <h1 class="display-3 text-center">SHEER<span style="color: red;">TECH</span></h1>
+                    </div>
+                </div>
+            
+                <nav class="navbar navbar-expand-sm navbar-light bg-light sticky-top">
+                    <a href="index.html" class="navbar-brand">
+                        <h3>SHEER<span style="color:red">TECH</span> </h3>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#expandme">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="expandme">
+                        <div class="navbar-nav">
+                            <a href="index.html" class="nav-item nav-link">Home</a>
+                            <a href="#aboutus" class="nav-item nav-link">About us</a>
+                            <a href="#contact" class="nav-item nav-link">Contact us</a>
+            
+                            <div class="btn-group">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Courses
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="#dropdownMenuButton">
+                                    <a class="dropdown-item btn btn-outline-danger" href="html.html">HTML</a>
+                                    <a class="dropdown-item btn btn-outline-danger" href="css.html">CSS</a>
+                                    <a class="dropdown-item btn btn-outline-danger" href="javascript.html">JavaScript</a>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <form class="form-inline ml-auto">
+                            <button class="btn btn-dark mr-1" type="button" id="dropdownMenuButton" aria-haspopup="true"
+                                aria-expanded="false">
+                                <a href="signup.html" target="_blank" style="text-decoration: none; color:whitesmoke">Sign up</a>
+                            </button>
+                            <input type="search" class="form-control mr-sm-2 shadow" placeholder="search" aria-lebel="search">
+                            <button type="button" class="btn btn-outline-info shadow"><svg xmlns="http://www.w3.org/2000/svg"
+                                    width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                    <path
+                                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </nav>
+        <div class="jumbotron">
+            <h1 class="text-center page-title display-4 text-uppercase">Flex<span style="color:red">box</span> </h1> <br>
+            <p>Flex-box is a one-dimenional layout method for laying out items or sharing space or distributing space or adding space in either rows or columns to make a webpage. <br>
+            Flexbox is a better way to align items within a container. <br>
+            A Flexvox is 2 axis which are main axis and cross axis. <br>
+            To activate flexbox or to use the flexbox layout we use the property <span class="highlight">display: flex</span> <br> 
+            A Flexbox container will always have a direction either row (horizontal) or column (vertical) direction, basis the direction it will have main axis and cross axis <br>
+            If we select <span class="highlight">flex-direction: row</span> then row will become the main axis or if we select <span class="highlight">flex-direction: column</span> then column
+            will become the main axis. <br>
+            By default main axis is row (horizontal) which goes from left to right. <br>
+            Flex properties can only be applied to the direct children.  <br>
+            Flex box is a block level element. <br>
+            Flexbox helps us to distribute space dynamically across elements of an unknown size, hence the term flex. <br>
+        </p>
+        </div>
+        
+        <div class="container">
+            <h2 class="display-4 text-center text-danger">CSS FLEXBOX</h2>
+            <p>The main concept of flexbox is to how do we distribute space across different elements to make those elements larger
+                or just add space in between these elements to move them to the left, to the right, split up the space evenly, make
+                sure that the first thing gets more space or the middle thing gets the least amount of space with in one container.
+                <br>
+                We can create flexible layouts. The boxes, the elements inside are flexing or flexible.
+            </p>
+            <div class="bg-secondary text-white">
+                <span class="note">Important :</span>
+                <p>
+                    To make a layout Flex there are certain pre-requisites:
+                <ul>
+                    <li>Flexbox properties can only be applied to its direct children</li>
+                    <li>The parent element will always be a container</li>
+                    <li>To give a layout flexbox attributes we need to use the property <span class="highlight">display: flex</span>
+                    <li>By default flex-direction is row which means it goes from left to right, to make the flex direction to be column which goes from top to bottom, we need to assign the property <span
+                            class="highlight">flex-direction: column</span> </li>
+                    <li><span class="highlight">flex-direction</span> determines how the content flows in a container</li>
+                    <li>The flex-direction we assign becomes the main axis and the other direction will be cross axis</li>
+                    <li>Inside of the container box comes the flex-item</li>
+                </ul>
+                </p>
+            </div>
+            <div class="container">
+                <span>The properties associated with container are :</span>
+                <ol>
+                    <li>flex-direction</li>
+                    <li>justify-content</li>
+                    <li>flex-wrap</li>
+                    <li>align-item</li>
+                    <li>align-content</li>
+                </ol>
+                <span>The properties associated with flex-item are :</span>
+                <ol>
+                    <li>order</li>
+                    <li>flex</li>
+                    <li>flex-grow</li>
+                    <li>flex-shrink</li>
+                    <li>align-self</li>
+                </ol>
+            </div>
+
+            <div class="container">
+                <span class="topic">Container</span> <br>
+                <span class="note mt-5">1. flex-direction : &nbsp; &nbsp; It helps to determine how the content flow whether its left to right, right to left, top to bottom or bottom to top.</span> <br>
+                
+
+                <table class="table table-dark">
+                    <thead>
+                        <th scope="col">#</th>
+                        <th scope="col">Property</th>
+                        <th scope="col">Declaration</th>
+                        <!-- <th scope="col">Usage</th> -->
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <!-- <td>Flex-direction</td> -->
+                            <td>flex-direction: row;</td>
+                            <td>To assign the flexbox direction from left to right in a row</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <!-- <td>Flex-direction</td> -->
+                            <td>flex-direction: row-reverse; </td>
+                            <td>To assign a flexbox direction from right to left in a row</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <!-- <td>Flex-direction</td> -->
+                            <td>flex-direction: column;</td>
+                            <td>To assign the flexbox direction from top to bottom</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <!-- <td>Flex-direction</td> -->
+                            <td>flex-direction: column-reverse;</td>
+                            <td>To assign the flexbox direction from bottom to top</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <span class="note mt-5">2. flex-wrap : &nbsp; &nbsp; Specifies whether our elements are going to wrap along the main axis onto a new line if it's horizontal or a new column if it's vertical main axis, in other words it specifies whether flex-items are forced into a single line OR can be wrapped into multiple lines.</span>
+                <table class="table table-dark">
+                    <thead>
+                        <th scope="col">#</th>
+                        <th scope="col">Property</th>
+                        <th scope="col">Declaration</th>
+                        <!-- <th scope="col">Usage</th> -->
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <!-- <td>Flex-wrap</td> -->
+                            <td>flex-wrap: nowrap;</td>
+                            <td>It squeezes the items in the same row or column also the default state for an item is no wrap</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <!-- <td>Flex-wrap</td> -->
+                            <td>flex-wrap: wrap;</td>
+                            <td>it does not squeeze the content with in the same row or column and it allows to move the content to the next line</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <!-- <td>Flex-wrap</td> -->
+                            <td>flex-wrap: wrap-reverse; </td>
+                            <td>Specifies that the flexible items will wrap, if necessary, in reverse order. If there is any element to reverse so it wraps in reverse direction in cross axis.</td>                            
+                        </tr>
+                        </tbody>
+                    </table>
+                    <span class="note">NOTE : &nbsp; &nbsp; Flex-direction and Flex-wrap are the two properties we use to control the 2 axis which are main axis and cross
+                    axis.</span>
+                    <span class="note mt-5">3. Justify-content :&nbsp; &nbsp; Defines how space is distributed between items in flex container along the main axis or how the actual element, the content is distributed across the main axis depending upon the flex-direction </span>    
+                    <table class="table table-dark">
+                        <thead>
+                            <th scope="col">#</th>
+                            <th scope="col">Property</th>
+                            <th scope="col">Declaration</th>
+                            <!-- <th scope="col">Usage</th> -->
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>justify-content: flex-start;</td>
+                                <td>Default value. Items are positioned at the beginning of the container</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>justify-content: flex-end;</td>
+                                <td>Items are positioned at the end of the container</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>justify-content: center;</td>
+                                <td>Items are positioned in the center of the container along the main axis</td>
+                            </tr>    
+                            <tr>
+                                <td>4</td>
+                                <td>space-between;</td>
+                                <td>Items will have space between them except for the first and the last element as it does not leave any space on the outside edges.</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>justify-content: space-around;</td>
+                                <td>Items will have space before, between, and after them like equal margins</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>justify-content: space-evenly;</td>
+                                <td>Items will have equal space around them</td>
+                            </tr>
+                        </tbody>
+                    </table>    
+                    <span class="note mt-5">4. align-items &nbsp; &nbsp; Defines how space is distributed between items in flex container along the cross axis. It is very similar to justify contents but justify contents is for the main axis and align-items is for cross axis.</span>
+                    <table class="table table-dark">
+                        <thead>
+                            <th scope="col">#</th>
+                            <th scope="col">Property</th>
+                            <th scope="col">Declaration</th>
+                            <!-- <th scope="col">Usage</th> -->
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>align-items: flex-start;</td>
+                                <td>It aligns the item to the start of the column.</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>align-items: flex-end;</td>
+                                <td>It aligns the item to the end of the column.</td>
+                            </tr>   
+                            <tr>
+                                <td>3</td>
+                                <td>align-items: center;</td>
+                                <td>It aligns the item to the center of the column along the cross axis.</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>align-items: stretch;</td>
+                                <td>The default property for align items is stretch as it stretches to fit the cross axis.</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>align-items: baseline</td>
+                                <td>This property helps to align the text content with in the element</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <span class="note mt-5">5. Align-content: &nbsp; &nbsp; It defines how space is distributed BETWEEN ROWS in flex container along the cross axis. It modifies the behaviour of <span class="highlight">flex-wrap</span> property. It does nothing if we don't have <span class="highlight">flex-wrap</span> property assigned to an element. It's a mixture of justify contents and align items. It distributes additional space
+                    along the cross axis. It is very important to have multiple element e.g multiple rows or colums to make align content
+                    work.</span> 
+                    <table class="table table-dark">
+                        <thead>
+                            <th scope="col">#</th>
+                            <th scope="col">Property</th>
+                            <th scope="col">Declaration</th>
+                            <!-- <th scope="col">Usage</th> -->
+                        </thead>
+                        <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>align-content: stretch;</td>
+                                    <td>Its a default property, it is used when the elements are over-flowing the container and we apply flex-wrap property so the element which were overflowing will come in the next line. </td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>align-content: flex-start;</td>
+                                    <td>It positions the elements at the top left corner if the flex-direction is set to row.</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>align-content: flex-end;</td>
+                                    <td>It positions the elements at the bottom left corner if the flex-direction is set to row. </td>
+                                </tr>                                
+                                <tr>
+                                    <td>4</td>
+                                    <td>align-content: center;</td>
+                                    <td>It positions an element in the center on the cross axis. </td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>align-content: space-between;</td>
+                                    <td>It position the elements at the top and at the bottom of the container and provide all the space in the middle.</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>                              
+                                    <td>align-content: space-around;</td>
+                                    <td>It assigns equal margin at the top and at the bottom on cross axis </td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>align-content: space-evenly;</td>
+                                    <td>It assigns the equal space at the top and at the bottom of each of the elements on cross axis</td>
+                                </tr>
+                    </table>
+                    <span class="important">Important: </span> <span class="highlight">Align-item</span> is used in single row but <span class="highlight">align-content</span> is used in double row where the element size are bigger and not fitting with in the same row after applying <span class="highlight">flex-wrap: wrap</span> property. It is used to adjust the space in between the rows after wrapping the elements. These are the properties we apply to the individual items that are inside of a flex container, using this property we
+                    can manipulate one item at a time.
+            </div>
+            <div class="mt-5 mb-3 container">
+                <span class="topic">Flex-items</span>
+                <span class="note">1. align-self: &nbsp; &nbsp; This is the first property which doesnt directly gets applied to the flex container instead it gets applied to the flex-items inside of flex container, It is very similar to align-items except it's actaully a property we add to a single element or it doesn't have to be one it could be more than one in a flex container. It helps us to change alignment along the cross axis for a single element using it.</span>
+                    <table class="table table-dark">
+                        <thead>
+                            <th scope="col">#</th>
+                            <th scope="col">Property</th>
+                            <th scope="col">Declaration</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>align-self: center</td>
+                                <td>It centers the targeted element in the center of the container</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>align-self: flex-start</td>
+                                <td>It move the targeted elements to the top of the container if align-content is set to flex-bottom </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>align-self: flex-end</td>
+                                <td>It moves the targeted element to the bottom of the container is the align-content is set to flex-start.</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>align-self: stretch</td>
+                                <td>The targeted element is positioned to fit the container</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>align-items:baseline </td>
+                                <td>The element is positioned at teh baseline of the container</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <span class="important">Important: </span> The <span class="highlight">align-self</span> property overrides the flexible
+                    container's <span class="highlight">align-items</span> property.
+                    <br> <br> 
+                    <span class="topic">Flex sizing property</span><br>
+                    <p class="para1 my-2 ">Flex sizing property consist of 3 separate properties flex-basis, flex-grow and flex-shrink, they are meant for the
+                    individual items in a flex container, it specifies how the element should grow or shrink when there is available space
+                    or when there is too little space. <br></p>
+
+                    <span class="note mt-5">2. Flex-basis:&nbsp; &nbsp; It specifies the  initial length or size of a flex item BEFORE it's placed into a flex container <br> 
+                        flex-basis' values could be in px or %. <br>
+                        It's basically used to handle width of flex-items. <br> </span>
+                    <table class="table table-dark">
+                        <thead>
+                            <th scope="col">#</th>
+                            <th scope="col">Property</th>
+                            <th scope="col">Declaration</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>flex-basis: 200px</td>
+                                <td>It specifies the value in pixel for the element which will have a different lenght</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>flex-basis: 20%</td>
+                                <td>We can assign the value in percentage as well to define the length of the specific element</td>
+                            </tr>
+                        </tbody>
+                    </table>    
+                <span class="note mt-5">3. Flex-grow: &nbsp; &nbsp; It controls the amount of available space an element should take up. Accepts a unit-less number value. It accepts an integer number like 1,2,3. The bigger the number the more times an element occupies the space. When we start to reduce the screen size it all comes to a point where all the elements occupy equal space and when we increase the size it again becomes the bigger element depending upon the flex-grow property applied unless flex-wrap is turned on then after minimum threshold it will move to the next line. </span>    
+                <table class="table table-dark">
+                    <thead>
+                        <th scope="col">#</th>
+                        <th scope="col">Property</th>
+                        <th scope="col">Declaration</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>flex-grow: 1</td>
+                            <td>The element occupies double the size of the other elements with in the container</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>flex-grow: 2</td>
+                            <td>The element occupies 3 times the size of the default size element with in the container</td>
+                        </tr>
+                    </tbody>    
+                </table>    
+                <span class="note">4. Flex-shrink: &nbsp; &nbsp; If items are larger than container, they shrink according to flex-shrink, When we apply the property <span class="highlight">flex-shrink</span> property we are just telling the element how much it should shrink relative to other elements</span>
+                <table class="table table-dark">
+                    <thead>
+                        <th scope="col">#</th>
+                        <th scope="col">Property</th>
+                        <th scope="col">Declaration</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>flex-shrink: 1;</td>
+                            <td>When we reduce the screen size, it will shrink the element with double the rate on which <span class="highlight">flex-shrink:1 </span> is applied.</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>flex-shrink: 0;</td>
+                            <td>When we reduce the screen size, it will not shrink the element's size at all and rest of the elements will shrink as per the screen size.</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <span class="note">5. Order: &nbsp; &nbsp; It specifies the sequence or order which is used to lay out items in their flex container. They are useful when we have more than one items in a container as we can change the sequence using the property <span class="highlight">Order</span>. We can assign a value in negative and positive both, the default value is "0". </span>
+                <table class="table table-dark">
+                    <thead>
+                        <th scope="col">#</th>
+                        <th scope="col">Property</th>
+                        <th scope="col">Declaration</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>order: 0</td>
+                            <td>Its is the default value which lets an item stay as per the regular sequence</td>
+                        </tr>
+                        <tr>
+                            <td> 2</td>
+                            <td>order: -1</td>
+                            <td>It puts an item ahead of the other items with in a container, the higher the negative value will be the more further an item will be placed</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>order: 1</td>
+                            <td>It puts an item after the default item place in a container, the higher the positive value will be, the later an item will be placed with in a container.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+    </div>
